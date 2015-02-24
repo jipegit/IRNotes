@@ -148,8 +148,10 @@ http://digital-forensics.sans.org/media/poster_fall_2013_forensics_final.pdf
 
 ## OS X ##
 List process related to port XXXX (bash)
+	
 	$ process=`lsof -n -i4TCP:XXXX | grep -v COMMAND | cut -d' ' -f1` ; for i in $process; do ps aux | grep $i | cut -d' ' -f 39- ; done
 
 ## Linux ##
 List process related to port XXXX 
+	
 	$ process=\`sudo netstat -anp | egrep ":XXXX\s" | cut -d/ -f 1 | rev | cut -d' ' -f1 | rev\` ; for i in $process; do ps aux | grep $i | grep -v grep; done
