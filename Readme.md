@@ -33,11 +33,15 @@
 ### Normal ###
 Reference: http://digital-forensics.sans.org/media/poster_2014_find_evil.pdf
 
-System
+#### System ####
 Image Path: No Image Path
+
 Parent Process: No Parent Process
+
 Number of Instances : One 
+
 User account: Local System
+
 Start Time: At boot time
 
 smss.exe
