@@ -124,14 +124,16 @@ http://digital-forensics.sans.org/media/poster_fall_2013_forensics_final.pdf
 ### Windows Time Rules
 
 #### $STDINFO
+
 | File Rename          | Local File Move      | Volume File Move     | File Copy            | File Access                             | File Modify          | File Creation      | File Deletion        |
 |----------------------|----------------------|----------------------|----------------------|-----------------------------------------|----------------------|--------------------|----------------------|
 | Modified – No Change | Modified – No Change | Modified – No Change | Modified – No Change | Modified – No Change                    | Modified – Change    | Modified – Change  | Modified – No Change |
 | Access – No Change   | Access – No Change   | Access – Change      | Access – Change      | Access – Change No Change on Vista/Win7 | Access – No Change   | Access – Change    | Access – No Change   |
 | Creation – No Change | Creation – No Change | Creation – No Change | Creation – Change    | Creation – No Change                    | Creation – No Change | Creation – Change  | Creation – No Change |
-| Metadata – Changed   | Metadata – Changed   | Metadata – Changed   | Metadata – Changed   | Metadata – Changed                      | Metadata – Changed   | Metadata – Changed |                      |
+| Metadata – Changed   | Metadata – Changed   | Metadata – Changed   | Metadata – Changed   | Metadata – Changed                      | Metadata – Changed   | Metadata – Changed | Metadata – No Change |
 
 #### $FILENAME
+
 | File Rename          | Local File Move      | Volume File Move   | File Copy          | File Access          | File Modify          | File Creation      | File Deletion        |
 |----------------------|----------------------|--------------------|--------------------|----------------------|----------------------|--------------------|----------------------|
 | Modified – No Change | Modified – Change    | Modified – Change  | Modified – Change  | Modified – No Change | Access – No Change   | Modified – Change  | Modified – No Change |
