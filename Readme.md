@@ -142,14 +142,14 @@ http://digital-forensics.sans.org/media/poster_fall_2013_forensics_final.pdf
 | Metadata – No Change | Metadata – Changed   | Metadata – Changed | Metadata – Changed | Access – No Change   | Access – No Change   | Metadata – Changed | Metadata – No Change |
 
 ### Procmon filters
-Operation is WriteFile
-Operation is RegSetValue
-Details containts Desired Access: Generic Write
+	Operation is WriteFile
+	Operation is RegSetValue
+	Details containts Desired Access: Generic Write
 
 ## OS X ##
 List process related to port XXXX (bash)
-`process=\`lsof -n -i4TCP:XXXX | grep -v COMMAND | cut -d' ' -f1\` ; for i in $process; do ps aux | grep $i | cut -d' ' -f 39- ; done`
+	$ process=`lsof -n -i4TCP:XXXX | grep -v COMMAND | cut -d' ' -f1` ; for i in $process; do ps aux | grep $i | cut -d' ' -f 39- ; done
 
 ## Linux ##
 List process related to port XXXX 
-`process=\`sudo netstat -anp | egrep ":XXXX\s" | cut -d/ -f 1 | rev | cut -d' ' -f1 | rev\` ; for i in $process; do ps aux | grep $i | grep -v grep; done`
+	$ process=\`sudo netstat -anp | egrep ":XXXX\s" | cut -d/ -f 1 | rev | cut -d' ' -f1 | rev\` ; for i in $process; do ps aux | grep $i | grep -v grep; done
