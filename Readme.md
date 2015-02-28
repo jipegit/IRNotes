@@ -170,4 +170,4 @@ List process related to port XXXX (bash)
 ## Linux ##
 List process related to port XXXX 
 	
-	$ process=\`sudo netstat -anp | egrep ":XXXX\s" | cut -d/ -f 1 | rev | cut -d' ' -f1 | rev\` ; for i in $process; do ps aux | grep $i | grep -v grep; done
+	$ process=`sudo netstat -anp | egrep ":XXXX\s" | cut -d/ -f 1 | rev | cut -d' ' -f1 | rev` ; for i in $process; do ps aux | grep $i | grep -v grep; done
