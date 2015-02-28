@@ -148,6 +148,15 @@ http://digital-forensics.sans.org/media/poster_fall_2013_forensics_final.pdf
 | Creation – No Change | Creation – No Change | Creation – Change  | Creation – Change  | Creation – No Change | Creation – No Change | Creation – Change  | Creation – No Change |
 | Metadata – No Change | Metadata – Changed   | Metadata – Changed | Metadata – Changed | Access – No Change   | Access – No Change   | Metadata – Changed | Metadata – No Change |
 
+
+### Mass Registry analysis with RegRipper
+
+	$ find path_to_the_files/ -type f -exec ./wrapper.sh {} \; 
+
+	wrapper.sh
+	./rip.exe -r "$1" -p user_run >> results.txt
+
+
 ### Procmon filters
 	Operation is WriteFile
 	Operation is RegSetValue
