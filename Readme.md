@@ -134,19 +134,19 @@ http://digital-forensics.sans.org/media/poster_fall_2013_forensics_final.pdf
 
 | File Rename          | Local File Move      | Volume File Move     | File Copy            | File Access                             | File Modify          | File Creation      | File Deletion        |
 |----------------------|----------------------|----------------------|----------------------|-----------------------------------------|----------------------|--------------------|----------------------|
-| Modified – No Change | Modified – No Change | Modified – No Change | Modified – No Change | Modified – No Change                    | Modified – Change    | Modified – Change  | Modified – No Change |
-| Access – No Change   | Access – No Change   | Access – Change      | Access – Change      | Access – Change No Change on Vista/Win7 | Access – No Change   | Access – Change    | Access – No Change   |
-| Creation – No Change | Creation – No Change | Creation – No Change | Creation – Change    | Creation – No Change                    | Creation – No Change | Creation – Change  | Creation – No Change |
-| Metadata – Changed   | Metadata – Changed   | Metadata – Changed   | Metadata – Changed   | Metadata – Changed                      | Metadata – Changed   | Metadata – Changed | Metadata – No Change |
+| Modified – No Change | Modified – No Change | Modified – No Change | Modified – No Change | Modified – No Change                    | <b>Modified – Change</b>    | <b>Modified – Change</b>  | Modified – No Change |
+| Access – No Change   | Access – No Change   | <b>Access – Change</b>      | <b>Access – Change</b>      | <b>Access – Change</b> No Change on Vista/Win7 | Access – No Change   | <b>Access – Change</b>    | Access – No Change   |
+| Creation – No Change | Creation – No Change | Creation – No Change | <b>Creation – Change</b>    | Creation – No Change                    | Creation – No Change | <b>Creation – Change</b>  | Creation – No Change |
+| <b>Metadata – Changed</b>   | <b>Metadata – Changed</b>   | <b>Metadata – Changed</b>   | <b>Metadata – Changed</b>   | <b>Metadata – Changed</b>                      | <b>Metadata – Changed</b>   | <b>Metadata – Changed</b> | Metadata – No Change |
 
 #### $FILENAME
 
 | File Rename          | Local File Move      | Volume File Move   | File Copy          | File Access          | File Modify          | File Creation      | File Deletion        |
 |----------------------|----------------------|--------------------|--------------------|----------------------|----------------------|--------------------|----------------------|
-| Modified – No Change | Modified – Change    | Modified – Change  | Modified – Change  | Modified – No Change | Access – No Change   | Modified – Change  | Modified – No Change |
-| Access – No Change   | Access – No Change   | Access – Change    | Access – Change    | Access – No Change   | Access – No Change   | Access – Change    | Access – No Change   |
-| Creation – No Change | Creation – No Change | Creation – Change  | Creation – Change  | Creation – No Change | Creation – No Change | Creation – Change  | Creation – No Change |
-| Metadata – No Change | Metadata – Changed   | Metadata – Changed | Metadata – Changed | Access – No Change   | Access – No Change   | Metadata – Changed | Metadata – No Change |
+| Modified – No Change | <b>Modified – Change</b>    | <b>Modified – Change</b>  | <b>Modified – Change</b>  | Modified – No Change | Access – No Change   | <b>Modified – Change</b>  | Modified – No Change |
+| Access – No Change   | Access – No Change   | <b>Access – Change</b>    | <b>Access – Change</b>    | Access – No Change   | Access – No Change   | <b>Access – Change</b>    | Access – No Change   |
+| Creation – No Change | Creation – No Change | <b>Creation – Change</b>  | <b>Creation – Change</b>  | Creation – No Change | Creation – No Change | <b>Creation – Change</b>  | Creation – No Change |
+| Metadata – No Change | <b>Metadata – Changed</b>   | <b>Metadata – Changed</b> | <b>Metadata – Changed</b> | Metadata – No Change   | Metadata – No Change   | <b>Metadata – Changed</b> | Metadata – No Change |
 
 
 ### Mass Registry analysis with RegRipper
