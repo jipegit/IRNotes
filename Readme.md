@@ -169,6 +169,11 @@ http://digital-forensics.sans.org/media/poster_fall_2013_forensics_final.pdf
 	Operation is RegSetValue
 	Details containts Desired Access: Generic Write
 
+### Domain users' SIDs
+
+vol.py -f memdump.mem --profile=Win7SP1x64 getsids > getsids_output.txt
+grep 'S-1-5-21-XXXXXXXXX-XXXXXXXXX-XXXXXXXXX-' getsids_output.txt | egrep '[A-Z][0-9]{6}' -o | sort -u
+
 ## OS X ##
 List process related to port XXXX (bash)
 	
