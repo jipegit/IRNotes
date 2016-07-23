@@ -28,7 +28,7 @@
 |                      |                                                                     | 7035        | Service sent a Start/Stop control                 |
 |                      |                                                                     | 7036        | Service sent a started or stoped                  |
 |                      |                                                                     | 7040        | Start type changed (Boot | On request | Disabled) |
-| Clearing Event Logs  | 517                                                                 |             |                                                   |
+| Clearing Event Logs  | 517                                                                 | 1102        |                                                   |
 
 ### Normal 
 
